@@ -1,7 +1,6 @@
 // ==UserScript==
 // @name         Green Steam
 // @namespace    http://tampermonkey.net/
-// @version      2024-03-05
 // @description  Just adding a pirated link to all the games in the Steam store
 // @author       FerNikoMF & Muxammadaziz04
 // @source       github:FerNikoMF/Green-Steam
