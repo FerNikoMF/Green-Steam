@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         Green Steam
 // @namespace    http://tampermonkey.net/
-// @author       FerNikoMF & Muxammadaziz04
-// @version      0.1
+// @version      2024-03-05
 // @description  Just adding a pirated link to all the games in the Steam store
+// @author       FerNikoMF & Muxammadaziz04
 // @source       github:FerNikoMF/Green-Steam
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
-// @match        *://store.steampowered.com/app/*
 // @homepage     https://github.com/FerNikoMF/Green-Steam
 // @homepageURL  https://github.com/FerNikoMF/Green-Steam
 // @downloadURL  https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green%20Steam.js
@@ -14,9 +13,13 @@
 // @grant        none
 // @updatedAT    05.03.2024
 // @license      MIT
+// @match        https://store.steampowered.com/
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=steampowered.com
+// @grant        none
 // ==/UserScript==
 
 (function() {
+    'use strict';
     const btnList = [
     { url: "https://steamrip.com/?s=", title: "SteamRIP" },
     { url: "https://www.playground.ru/", title: "Playground", withSlug: true },
@@ -59,7 +62,6 @@ function furnishSteamLink(href, text) {
     element.innerText = text;
     return element;
 }
-})();
 
-/******/ })()
-;
+
+})();
