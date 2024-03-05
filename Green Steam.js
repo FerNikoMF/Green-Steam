@@ -9,6 +9,7 @@ const siteUrls = [
     { url: "https://store.steampowered.com/app/*", title: "Steam" },
 ];
 
+
 // ==UserScript==
 // @name         Green Steam
 // @namespace    FerNikoMF & Muxammadaziz04
