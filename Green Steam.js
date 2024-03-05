@@ -1,14 +1,13 @@
 /* eslint-disable no-multi-spaces */
 const btnList = [
     { url: "https://steamrip.com/?s=", title: "SteamRIP" },
-    //{ url: "https://store.epicgames.com/en-US/browse?q=", title: "Epic games" },
+    { url: "https://www.playground.ru/", title: "Playground", withSlug: true },
     { url: "https://rutracker.net/forum/tracker.php?nm=", title: "Rutracker" },
 ];
 
 const siteUrls = [
     { url: "https://store.steampowered.com/app/*", title: "Steam" },
 ];
-
 
 // ==UserScript==
 // @name         Green Steam
@@ -34,8 +33,14 @@ if(siteResult == 'Steam'){
     document.querySelector(".game_purchase_action_bg:first-child").style.cssText = "height: 50px; max-width: 500px; text-wrap: wrap";
 
     btnList.forEach((el) => {
-        document.querySelector(".apphub_OtherSiteInfo").insertAdjacentElement("afterend", furnishSteamLink(el.url + appName, el.title));
+        const url = el?.withSlug ? el.url + textToSlug(appName) : el.url + appName
+        document.querySelector(".apphub_OtherSiteInfo").insertAdjacentElement("afterend", furnishSteamLink(url, el.title));
     });
+}
+
+function textToSlug(text) {
+    if(typeof text !== 'string') return ''
+    return text?.toLowerCase()?.split(' ')?.join('_')
 }
 
 function furnishSteamLink(href, text) {
