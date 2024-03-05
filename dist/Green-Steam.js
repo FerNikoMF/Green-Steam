@@ -59,4 +59,7 @@ function furnishSteamLink(href, text) {
     element.innerText = text;
     return element;
 }
-})()
+})();
+
+/******/ })()
+;
