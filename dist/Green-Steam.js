@@ -16,9 +16,6 @@
 // @license      MIT
 // ==/UserScript==
 
-
-// ==/UserScript==
-
 (function() {
     const btnList = [
     { url: "https://steamrip.com/?s=", title: "SteamRIP" },
