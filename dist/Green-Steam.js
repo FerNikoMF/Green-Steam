@@ -18,8 +18,8 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
-    'use strict';
+(function (i, core, bootstrap, jimp, fileSaver, lodash, fflate) {
+  'use strict';
     const btnList = [
     { url: "https://steamrip.com/?s=", title: "SteamRIP" },
     { url: "https://www.playground.ru/", title: "Playground", withSlug: true },
