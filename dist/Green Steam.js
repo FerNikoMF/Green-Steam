@@ -13,7 +13,9 @@
 // @license      MIT
 // ==/UserScript==
 
-(
+(function() {
+    'use strict';
+    
     const btnList = [
     { url: "https://steamrip.com/?s=", title: "SteamRIP" },
     { url: "https://www.playground.ru/", title: "Playground", withSlug: true },
@@ -56,4 +58,4 @@ function furnishSteamLink(href, text) {
     element.innerText = text;
     return element;
 }
-)()
+})()
