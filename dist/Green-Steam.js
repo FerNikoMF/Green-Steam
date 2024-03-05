@@ -1,24 +1,27 @@
 // ==UserScript==
 // @name         Green Steam
 // @namespace    http://tampermonkey.net/
-// @description  Just adding a pirated link to all the games in the Steam store
 // @author       FerNikoMF & Muxammadaziz04
-// @source       github:FerNikoMF/Green-Steam
-// @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
+// @version      0.1
+// @description  Just adding a pirated link to all the games in the Steam store
+// @match        https://store.steampowered.com/app/*
 // @homepage     https://github.com/FerNikoMF/Green-Steam
 // @homepageURL  https://github.com/FerNikoMF/Green-Steam
-// @downloadURL  https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green%20Steam.js
-// @updateURL    https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green%20Steam.js
+// @downloadURL  hhttps://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green-Steam.js
+// @updateURL    https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green-Steam.js
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @grant        none
-// @updatedAT    05.03.2024
 // @license      MIT
 // @match        https://store.steampowered.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=steampowered.com
 // @grant        none
+// @grant        none
+// @license      MIT
 // ==/UserScript==
 
-(function (i, core, bootstrap, jimp, fileSaver, lodash, fflate) {
-  'use strict';
+(function() {
+    'use strict';
+
     const btnList = [
     { url: "https://steamrip.com/?s=", title: "SteamRIP" },
     { url: "https://www.playground.ru/", title: "Playground", withSlug: true },
@@ -61,6 +64,4 @@ function furnishSteamLink(href, text) {
     element.innerText = text;
     return element;
 }
-
-
-})();
+})()
