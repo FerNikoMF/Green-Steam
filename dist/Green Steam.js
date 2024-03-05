@@ -7,8 +7,8 @@
 // @match        https://store.steampowered.com/app/*
 // @homepage     https://github.com/FerNikoMF/Green-Steam
 // @homepageURL  https://github.com/FerNikoMF/Green-Steam
-// @downloadURL  https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/Green%20Steam.js
-// @updateURL    https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/Green%20Steam.js
+// @downloadURL  https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green%20Steam.js
+// @updateURL    https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green%20Steam.js
 // @grant        none
 // @license      MIT
 // ==/UserScript==
