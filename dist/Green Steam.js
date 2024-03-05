@@ -11,19 +11,19 @@ const siteUrls = [
 
 // ==UserScript==
 // @name         Green Steam
-// @namespace    FerNikoMF & Muxammadaziz04
+// @namespace    http://tampermonkey.net/
 // @author       FerNikoMF & Muxammadaziz04
-// @version      1.0.0
+// @version      0.1
 // @description  Just adding a pirated link to all the games in the Steam store
 // @match        https://store.steampowered.com/app/*
 // @homepage     https://github.com/FerNikoMF/Green-Steam
 // @homepageURL  https://github.com/FerNikoMF/Green-Steam
 // @downloadURL  https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/Green%20Steam.js
 // @updateURL    https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/Green%20Steam.js
-// @match        *://store.steampowered.com/app/*
 // @grant        none
 // @license      MIT
 // ==/UserScript==
+
 
 let siteResult = "";
 
