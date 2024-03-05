@@ -1,14 +1,3 @@
-/* eslint-disable no-multi-spaces */
-const btnList = [
-    { url: "https://steamrip.com/?s=", title: "SteamRIP" },
-    { url: "https://www.playground.ru/", title: "Playground", withSlug: true },
-    { url: "https://rutracker.net/forum/tracker.php?nm=", title: "Rutracker" },
-];
-
-const siteUrls = [
-    { url: "https://store.steampowered.com/app/*", title: "Steam" },
-];
-
 // ==UserScript==
 // @name         Green Steam
 // @namespace    http://tampermonkey.net/
@@ -24,6 +13,16 @@ const siteUrls = [
 // @license      MIT
 // ==/UserScript==
 
+(
+    const btnList = [
+    { url: "https://steamrip.com/?s=", title: "SteamRIP" },
+    { url: "https://www.playground.ru/", title: "Playground", withSlug: true },
+    { url: "https://rutracker.net/forum/tracker.php?nm=", title: "Rutracker" },
+];
+
+const siteUrls = [
+    { url: "https://store.steampowered.com/app/*", title: "Steam" },
+];
 
 let siteResult = "";
 
@@ -57,3 +56,4 @@ function furnishSteamLink(href, text) {
     element.innerText = text;
     return element;
 }
+)()
