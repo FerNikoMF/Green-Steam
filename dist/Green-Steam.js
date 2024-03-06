@@ -15,7 +15,6 @@
 // @match        https://store.steampowered.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=steampowered.com
 // @grant        none
-// @grant        none
 // @license      MIT
 // ==/UserScript==
 
@@ -29,6 +28,21 @@
 const siteUrls = [
     { url: "https://store.steampowered.com/app/*", title: "Steam" },
 ];
+
+    function textToSlug(text) {
+    if(typeof text !== 'string') return ''
+    return text?.toLowerCase()?.split(' ')?.join('_')
+}
+
+function furnishSteamLink(href, text) {
+    const element = document.createElement("a");
+    element.target = "_blank";
+    element.classList.add("apphub_OtherSiteInfo");
+    element.style.cssText = "padding: 1px 15px; line-height: 30px; font-size: 15px; color: #67c1f5; background-color: rgba(103, 193, 245, 0.2); margin-right: 10px; border-radius: 2px;";
+    element.href = href;
+    element.innerText = text;
+    return element;
+}
 
 let siteResult = "";
 
@@ -46,20 +60,5 @@ if(siteResult == 'Steam'){
         const url = el?.withSlug ? el.url + textToSlug(appName) : el.url + appName
         document.querySelector(".apphub_OtherSiteInfo").insertAdjacentElement("afterend", furnishSteamLink(url, el.title));
     });
-}
-
-function textToSlug(text) {
-    if(typeof text !== 'string') return ''
-    return text?.toLowerCase()?.split(' ')?.join('_')
-}
-
-function furnishSteamLink(href, text) {
-    const element = document.createElement("a");
-    element.target = "_blank";
-    element.classList.add("apphub_OtherSiteInfo");
-    element.style.cssText = "padding: 1px 15px; line-height: 30px; font-size: 15px; color: #67c1f5; background-color: rgba(103, 193, 245, 0.2); margin-right: 10px; border-radius: 2px;";
-    element.href = href;
-    element.innerText = text;
-    return element;
 }
 })();
