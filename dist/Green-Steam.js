@@ -10,7 +10,6 @@
 // @downloadURL  hhttps://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green-Steam.js
 // @updateURL    https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green-Steam.js
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
-// @grant        none
 // @license      MIT
 // @match        https://store.steampowered.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=steampowered.com
