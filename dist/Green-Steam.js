@@ -1,11 +1,20 @@
 // ==UserScript==
-// @name         Stream IMDB
+// @name         Green Steam
 // @namespace    http://tampermonkey.net/
-// @version      0.5
-// @description  try to take over the Streaming world!
-// @author       FerNikoMF
-// @match        https://www.imdb.com/title/*
+// @author       FerNikoMF & Muxammadaziz04
+// @version      0.1
+// @description  Just adding a pirated link to all the games in the Steam store
+// @match        https://store.steampowered.com/app/*
+// @homepage     https://github.com/FerNikoMF/Green-Steam
+// @homepageURL  https://github.com/FerNikoMF/Green-Steam
+// @downloadURL  hhttps://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green-Steam.js
+// @updateURL    https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green-Steam.js
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
+// @license      MIT
+// @match        https://store.steampowered.com/
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=steampowered.com
 // @grant        none
+// @license      MIT
 // ==/UserScript==
 
 (function() {
