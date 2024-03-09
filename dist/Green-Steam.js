@@ -19,7 +19,6 @@
 
 (function() {
     const btnList = [
-    { url: "https://steamrip.com/?s=", title: "SteamRIP" },
     { url: "https://www.playground.ru/", title: "Playground", withSlug: true },
     { url: "https://rutracker.net/forum/tracker.php?nm=", title: "Rutracker" },
 ];
