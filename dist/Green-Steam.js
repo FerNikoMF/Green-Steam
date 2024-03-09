@@ -2,7 +2,7 @@
 // @name         Green Steam
 // @namespace    http://tampermonkey.net/
 // @author       FerNikoMF & Muxammadaziz04
-// @version      1.1.0
+// @version      1.1.1
 // @description  Just adding a pirated link to all the games in the Steam store
 // @match        https://store.steampowered.com/app/*
 // @homepage     https://github.com/FerNikoMF/Green-Steam
