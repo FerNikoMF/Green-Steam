@@ -51,7 +51,7 @@ let appName = "";
 
 if(siteResult == 'Steam'){
     appName = document.querySelector(".apphub_AppName").textContent.trim();
-    document.querySelector(".game_purchase_action_bg:first-child").style.cssText = "height: 50px; max-width: 500px; text-wrap: wrap";
+    document.querySelector(".game_purchase_action_bg:first-child").style.cssText = "height: 32px; max-width: 500px; text-wrap: wrap";
 
     btnList.forEach((el) => {
         const url = el?.withSlug ? el.url + textToSlug(appName) : el.url + appName
