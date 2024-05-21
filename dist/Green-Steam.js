@@ -8,7 +8,6 @@
 // @homepage     https://github.com/FerNikoMF/Green-Steam
 // @downloadURL  https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green-Steam.js
 // @updateURL    https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/dist/Green-Steam.js
-// @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @license      MIT
 // @icon         https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/green.png
 // @grant        none
