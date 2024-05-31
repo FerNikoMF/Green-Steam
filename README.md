@@ -1,6 +1,8 @@
 # Green-Steam
 Just adding a pirated link to all the games in the Steam store
 
+![](https://raw.githubusercontent.com/FerNikoMF/Green-Steam/main/image.png)
+
 ## Installation
 
 Make sure you have userscripts manager enabled in your browser:
